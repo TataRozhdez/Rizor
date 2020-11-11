@@ -1,0 +1,11 @@
+.copyrites {
+  width: 100vw;
+  background-color: #292929;
+  padding: 10px 0 7px;
+  text-align: center;
+}
+
+.copyrites span {
+  font-size: 12px;
+  color: #605f5f;
+}

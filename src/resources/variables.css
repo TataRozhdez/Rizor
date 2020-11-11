@@ -1,0 +1,11 @@
+:root {
+  --white: #fff;
+  --gray: #cdcdcd;
+  --light-gray: #f8f8f8;
+  --black: #000;
+  --blue: #3a30f8;
+
+  --lg-screen: 1200px;
+  --sm-screen: 769px;
+  --xs-screen: 574px;
+}

@@ -1,0 +1,39 @@
+@import '../../resources/variables.css';
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  padding: 30px 0;
+}
+
+.logo {
+  height: 38px;
+}
+
+.navbar-link:not(:last-child) {
+  margin-right: 70px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+}
+
+.navbar li {
+  position: relative;
+  font-family: 'Roboto-Bold';
+}
+
+.isActive::before {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: var(--blue);
+  position: absolute;
+  top: 100%;
+  left: -10%;
+}

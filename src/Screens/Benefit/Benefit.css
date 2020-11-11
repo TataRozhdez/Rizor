@@ -1,0 +1,35 @@
+.benefit {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.benefit-parallax__layer {
+  z-index: -99;
+  position: fixed;
+  top: 0%;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-parallax {
+  height: 70vh;
+}
+
+.right-parallax {
+  right: 0;
+  transform: rotate(-90deg);
+}
+
+.right-parallax h1 {
+  font-size: 170px;
+  text-align: right;
+  color: #f8f8f8;
+}
