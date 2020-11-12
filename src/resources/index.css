@@ -45,13 +45,13 @@ h4 {
 }
 
 .body_benefit > h2 {
-  font-size: 40px;
-  margin-bottom: 35px;
+  font-size: 2vw;
+  margin-bottom: 1.823vw;
   font-weight: 400;
 }
 
 .body_benefit li {
-  margin: 0 0 10px;
+  margin: 0 0 0 10px;
 }
 
 .body_benefit ul {
@@ -59,14 +59,34 @@ h4 {
 }
 
 .body_benefit {
-  font-size: 18px;
-  max-width: 285px;
+  font-size: 1.25vw;
+  max-width: 15vw;
 }
 
 .black-line {
-  width: 30px;
-  height: 3px;
+  width: 2.083vw;
+  height: 0.208vw;
   background-color: var(--black);
-  margin: 0 5px 5px;
+  margin: 0 0.347vw 0.347vw;
   writing-mode: vertical-lr;
+}
+
+.play-btn-rightside {
+  width: 4.514vw;
+}
+
+@media (max-width: 769px) {
+  .black-line {
+    height: 1px;
+  }
+
+  .body_benefit li {
+    margin: 0 0 0 1.379vw;
+  }
+}
+
+@media (max-width: 426px) {
+  .play-btn-rightside {
+    width: 8vw;
+  }
 }

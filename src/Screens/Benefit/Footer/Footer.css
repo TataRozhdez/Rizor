@@ -3,15 +3,15 @@
 .footer {
   width: 100vw;
   height: 70vh;
-  font-size: 20px;
+  font-size: 1.389vw;
   background: center / cover no-repeat url(../../../resources/img/footerBck.png);
   position: relative;
   color: var(--white);
-  padding: 100px 0 0 340px;
+  padding: 5.208vw 0 0 17.708vw;
 }
 
 .footer-img {
-  width: 1170px;
+  width: 60.938vw;
   position: absolute;
   right: 0;
   top: -15%;
@@ -33,27 +33,27 @@
   left: 40%;
   z-index: 10;
   text-align: right;
-  font-size: 80px;
+  font-size: 4.167vw;
   margin: 0;
-  line-height: 128px;
+  line-height: 6.667vw;
 }
 
 .footer-text {
-  width: 340px;
+  width: 17.708vw;
 }
 
 .footer-text h3 {
   font-weight: 100;
-  margin-bottom: 80px;
+  margin-bottom: 4.167vw;
 }
 
 .footer-text p {
-  margin-bottom: 30px;
-  line-height: 23px;
+  margin-bottom: 1.563vw;
+  line-height: 1.597vw;
 }
 
 .footer-text div {
-  margin-top: 100px;
+  margin-top: 5.208vw;
 }
 
 .footer-text a {
@@ -61,8 +61,27 @@
   text-transform: uppercase;
   font-family: 'RubikMonoOne';
   font-weight: 100;
-  padding: 18px 45px;
-  font-size: 16px;
+  padding: 0.938vw 2.344vw;
+  font-size: 0.833vw;
   z-index: 10;
   background: center / contain no-repeat url(../../../resources/img/elips.png);
+}
+
+.footer-text:hover a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 426px) {
+  .footer {
+    height: 45vh;
+    padding: 3vw 0 0 3vw;
+  }
+
+  .footer-img {
+    top: 22%;
+  }
+
+  .footer-text {
+    transform: translate(11.765vw, 11.765vw) scale(1.5);
+  }
 }

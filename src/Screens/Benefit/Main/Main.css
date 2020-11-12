@@ -9,12 +9,12 @@
 }
 
 .main h1 {
-  font-size: 80px;
-  letter-spacing: 6px;
+  font-size: 4.167vw;
+  letter-spacing: 0.313vw;
 }
 
 .main p {
-  font-size: 20px;
+  font-size: 1.042vw;
   font-family: 'Roboto-Bold';
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -28,7 +28,7 @@
 }
 
 .video-content {
-  width: 1076px;
+  width: 56.042vw;
 }
 
 .video_side-block {
@@ -42,10 +42,10 @@
 
 .video_side-block p {
   -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg) translate(-40%, 50%);
-  height: 20px;
-  max-width: 65px;
-  font-size: 12px;
+  transform: rotate(-90deg) translate(-2.292vw, 0.417vw);
+  height: 1.042vw;
+  max-width: 3.385vw;
+  font-size: 0.625vw;
   margin: 0;
   letter-spacing: 1px;
   position: relative;
@@ -54,9 +54,9 @@
 .video_side-block_corner-arrow {
   position: absolute;
   top: 0;
-  left: -121px;
+  left: -5.903vw;
   width: 2px;
-  height: 190px;
+  height: 17.6vh;
   transform: translate(0%, -47%) rotate(90deg);
   background-color: var(--gray);
 }
@@ -83,11 +83,75 @@
 }
 
 .main-title {
-  margin-left: 374px;
+  margin-left: 19.479vw;
   position: relative;
 }
 
 .main-title_arrow-down {
   position: absolute;
-  bottom: -40%;
+  bottom: -50%;
+  animation: arrow-down-slider 3s 5s infinite ease-in-out;
+}
+
+@keyframes arrow-down-slider {
+  from {
+    bottom: -50%;
+    opacity: 0.2;
+  }
+  to {
+    bottom: -60%;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 769px) {
+  .main-title {
+    margin-left: 14vw;
+  }
+  .video_side-block_corner-arrow {
+    width: 1px;
+    height: 19.31vw;
+    transform: translate(-4.7vw, -9.241vw) rotate(90deg);
+  }
+
+  .video_side-block_corner-arrow::before {
+    width: 2px;
+    height: 2px;
+  }
+
+  .main-title_arrow-down {
+    bottom: -70%;
+    height: 7.55vw;
+  }
+}
+
+@media (max-width: 426px) {
+  .main h1 {
+    font-size: 10.167vw;
+  }
+
+  .main p {
+    font-size: 2.042vw;
+  }
+
+  .video_side-block {
+    left: -11%;
+  }
+
+  .video_side-block p {
+    transform: rotate(-90deg) translate(-7.059vw, -3.294vw);
+  }
+
+  .video_side-block_corner-arrow {
+    height: 24.31vw;
+    transform: translate(-7.059vw, -10.118vw) rotate(90deg);
+  }
+
+  .main-title {
+    margin: 17.647vw 0 0 14vw;
+  }
+
+  .main-title_arrow-down {
+    height: 10.5vw;
+  }
 }

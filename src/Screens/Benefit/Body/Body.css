@@ -6,7 +6,7 @@
 
 .body_video-block {
   position: relative;
-  margin-top: 70px;
+  margin-top: 3.4vw;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -16,18 +16,20 @@
   position: absolute;
   top: 40%;
   left: 15%;
+  z-index: 10;
+  width: 4.514vw;
 }
 
 .design {
-  margin-left: 100px;
+  margin-left: 5.208vw;
 }
 
-.body_video-block h3 {
-  font-size: 20px;
-  font-weight: 100;
-  color: #3a30f8;
-  margin-bottom: 80px;
-  width: 285px;
+.design_video2 {
+  width: 39vw;
+}
+
+.design h2 {
+  margin-top: 4.167vw;
 }
 
 .color {
@@ -39,17 +41,13 @@
 .color-choose ul {
   display: flex;
   flex-direction: row;
-  margin: 60px 0 30px;
+  margin: 3.125vw 0 1.563vw;
 }
 
 .color-item {
-  width: 21px;
-  height: 21px;
+  width: 1.458vw;
+  height: 1.458vw;
   border-radius: 50%;
-}
-
-.color-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .yellow {
@@ -71,15 +69,16 @@
 .bike-image {
   position: absolute;
   right: 0;
+  width: 19.479vw;
 }
 
 .benefit_side-corner-arrow {
   position: absolute;
-  top: 10%;
+  top: 1.042vw;
   width: 2px;
-  height: 236px;
+  height: 21.85vh;
   background-color: var(--gray);
-  left: -9%;
+  left: -2.083vw;
 }
 
 .benefit_side-corner-arrow::before {
@@ -109,11 +108,11 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  padding-bottom: 200px;
+  padding-bottom: 10.417vw;
 }
 
 .modes_img {
-  width: 1070px;
+  width: 55.729vw;
 }
 .modes_video {
   position: relative;
@@ -121,7 +120,7 @@
 .modes-video_side-block {
   position: absolute;
   bottom: 10%;
-  right: 1030px;
+  right: 53.646vw;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -140,7 +139,7 @@
 }
 
 .modes-video_arrow-corner {
-  width: 240px;
+  width: 16.667vw;
   height: 2px;
   background-color: var(--gray);
   position: absolute;
@@ -163,13 +162,13 @@
   background-color: var(--gray);
   position: absolute;
   width: 1px;
-  height: 190px;
-  top: -188px;
+  height: 13.194vw;
+  top: -13.056vw;
   left: 100%;
 }
 
 .modes > .body_benefit {
-  margin-right: 250px;
+  margin-right: 13.021vw;
 }
 
 .speeds {
@@ -177,18 +176,87 @@
   flex-direction: row;
   width: 150%;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 2.604vw;
 }
 
 .speeds h1 {
   color: #3a30f8;
-  letter-spacing: -6px;
-  font-size: 60px;
+  font-size: 3.125vw;
+  letter-spacing: -0.347vw;
   font-weight: 700;
   text-transform: lowercase;
 }
 
 .speeds h3 {
+  padding-right: 1.7vw;
   text-align: end;
   color: #3a30f8;
+}
+
+@media (max-width: 769px) {
+  .benefit_side-corner-arrow {
+    width: 1px;
+    left: -3.448vw;
+  }
+
+  .benefit_side-corner-arrow::before {
+    width: 2px;
+    height: 2px;
+  }
+
+  .modes {
+    height: 90vh;
+  }
+
+  .modes > .body_benefit {
+    margin: 25.931vw;
+  }
+
+  .modes-video_arrow-corner {
+    height: 1px;
+    width: 44.828vw;
+  }
+
+  .modes-video_arrow-corner::before {
+    width: 2px;
+    height: 2px;
+  }
+}
+
+@media (max-width: 426px) {
+  .color {
+    position: absolute;
+    top: 76%;
+    right: 38%;
+  }
+
+  .benefit_side-corner-arrow {
+    left: -5.882vw;
+  }
+
+  .body_play-btn {
+    transform: translate(32vw, -9.412vw);
+  }
+
+  .body_video-block {
+    transform: translate(25%, 30%) scale(1.5);
+    align-items: flex-start;
+  }
+
+  .design h2 {
+    margin-top: 0;
+  }
+
+  .modes > .body_benefit {
+    transform: translate(30%, -78%) scale(1.5);
+    margin: 25.931vw;
+  }
+
+  .modes-video_arrow-corner {
+    width: 41vw;
+  }
+
+  .modes-video_arrow-corner {
+    top: 100%;
+  }
 }
