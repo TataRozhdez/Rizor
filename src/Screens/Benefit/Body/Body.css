@@ -103,7 +103,7 @@
 }
 
 .modes {
-  height: 120vh;
+  height: 70vw;
   width: 100vw;
   display: flex;
   align-items: flex-end;
