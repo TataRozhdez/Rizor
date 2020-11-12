@@ -108,7 +108,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  padding-bottom: 10.417vw;
+  padding-bottom: 16.417vw;
 }
 
 .modes_img {
@@ -232,6 +232,11 @@
 
   .benefit_side-corner-arrow {
     left: -5.882vw;
+  }
+
+  .benefit_side-corner-arrow::after {
+    left: 4px;
+    height: 10px;
   }
 
   .body_play-btn {

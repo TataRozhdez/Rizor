@@ -17,10 +17,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 
 .left-parallax {
-  height: 70vh;
+  width: 25vw;
 }
 
 .right-parallax {

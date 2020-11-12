@@ -19,8 +19,8 @@ export const Main = () => {
       <Reveal repeat>
         <div className='main-video'>
           <Tween
-            from={{ x: '-50%', opacity: 0 }}
-            to={{ x: '0%', opacity: 1 }}
+            from={{ opacity: 0.5 }}
+            to={{ opacity: 1, rotation: '360' }}
             duration={1}
           >
             <img className='video-content' src={videoOneImg} alt='video' />
