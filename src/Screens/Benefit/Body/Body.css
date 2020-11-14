@@ -197,6 +197,7 @@
   .benefit_side-corner-arrow {
     width: 1px;
     left: -3.448vw;
+    height: 16.85vw;
   }
 
   .benefit_side-corner-arrow::before {
@@ -205,11 +206,33 @@
   }
 
   .modes {
-    height: 90vh;
+    height: 69vw;
+    align-items: flex-start;
+    padding-top: 18.229vw;
+    position: relative;
+  }
+
+  .design {
+    margin-left: 7.208vw;
+  }
+
+  .design_video2 {
+    width: 70vw;
+  }
+
+  .body_video-block {
+    align-items: flex-start;
+    min-height: 70vw;
+  }
+
+  .body_play-btn {
+    left: 30vw;
   }
 
   .modes > .body_benefit {
-    margin: 25.931vw;
+    position: absolute;
+    top: 3vw;
+    left: 6vw;
   }
 
   .modes-video_arrow-corner {
@@ -221,13 +244,18 @@
     width: 2px;
     height: 2px;
   }
+
+  .color {
+    top: 40vw;
+    right: 4vw;
+  }
 }
 
 @media (max-width: 426px) {
   .color {
     position: absolute;
-    top: 76%;
-    right: 38%;
+    top: 35%;
+    right: 35%;
   }
 
   .benefit_side-corner-arrow {
@@ -240,21 +268,24 @@
   }
 
   .body_play-btn {
-    transform: translate(32vw, -9.412vw);
+    transform: translate(-12vw, -11vw);
   }
 
   .body_video-block {
     transform: translate(25%, 30%) scale(1.5);
-    align-items: flex-start;
+    max-width: 100vw;
   }
 
   .design h2 {
     margin-top: 0;
   }
 
+  .design_video2 {
+    width: 40vw;
+  }
+
   .modes > .body_benefit {
-    transform: translate(30%, -78%) scale(1.5);
-    margin: 25.931vw;
+    transform: translate(8%, 17%) scale(1.5);
   }
 
   .modes-video_arrow-corner {
